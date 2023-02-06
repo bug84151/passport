@@ -296,7 +296,7 @@ header {
   border-radius: 100px;
 }
 
-.destination_container p {
+.destination_container .label {
   font-size: 15px;
   text-align: left;
   padding: 0 40px;
@@ -312,6 +312,10 @@ header {
   margin: 0 40px;
   margin-bottom: 40px;
   border-radius: 10px;
+}
+
+.destination .drop_down_content {
+  bottom: 55px;
 }
 
 .form_btn_container {
@@ -736,6 +740,14 @@ section {
   .cta_buttons,
   .navItems {
     display: none;
+  }
+
+  /* form styles */
+
+  .form_input .drop_down {
+    position: relative;
+    top: 38px;
+    right: 60px;
   }
 
   .feature-cards {

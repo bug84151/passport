@@ -49,7 +49,7 @@ x_mark.addEventListener("click", () => {
 // dropdown listeners
 action_btn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    e.target.parentElement.classList.toggle("show_drop_down");
+    e.target.parentElement.parentElement.classList.toggle("show_drop_down");
   });
 });
 
@@ -60,6 +60,13 @@ list_item.forEach((li) => {
     drop_down.firstElementChild.firstElementChild.innerText =
       e.target.innerText;
 
-    drop_down.classList.toggle("show_drop_down");
+    // drop_down.classList.toggle("show_drop_down");
+    if (
+      e.target.parentElement.parentElement.parentElement.classList.contains(
+        "drop_down"
+      )
+    ) {
+      drop_down.classList.toggle("show_drop_down");
+    }
   });
 });
