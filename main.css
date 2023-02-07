@@ -226,6 +226,11 @@ header {
   border: none;
 }
 
+input:focus {
+  border: none;
+  outline: none;
+}
+
 .action_btn {
   font-weight: Bold;
   display: flex;
