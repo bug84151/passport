@@ -35,6 +35,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.max_width {
+  max-width: 1200px;
+}
+
 .cta_buttons {
   display: flex;
   align-items: center;
@@ -85,6 +90,7 @@ img {
 }
 .nav_bar {
   display: flex;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
@@ -145,7 +151,7 @@ header {
   margin-bottom: 20rem;
 }
 .header_text {
-  margin: 0 200px;
+  margin: 0 auto;
   padding: 64px 0 20px 0;
 }
 
@@ -364,7 +370,7 @@ section {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin: 30px auto;
 }
 
 .feature-card {
@@ -374,7 +380,7 @@ section {
   height: 578px;
   background: rgb(247, 242, 251);
   margin: 10px;
-  padding: 80px 32px 0;
+  padding: 30px 32px 0;
 }
 
 .card-title {
@@ -414,6 +420,7 @@ section {
 .standout_cards {
   display: flex;
   gap: 48px;
+  margin: 0 auto;
 }
 
 .standout-text {
@@ -544,7 +551,7 @@ section {
   padding-inline: 62px;
   border-radius: 10px;
   align-items: center;
-  margin: 130px 83px;
+  margin: 130px auto;
   height: 400px;
   background: linear-gradient(
     85.88deg,
@@ -586,6 +593,8 @@ section {
 .footer_text {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
   font-size: medium;
   font-weight: 500;
   color: #fff;
@@ -614,10 +623,15 @@ section {
   color: #fff;
 }
 
+.btn_copyright_wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%;
+  align-items: flex-end;
+}
+
 .copyRight {
-  position: absolute;
-  right: 100px;
-  bottom: 70px;
   color: #e2e8f0;
 }
 
@@ -852,7 +866,7 @@ section {
 
 /* Ipad Media Query */
 
-@media (max-width: 768px) and (min-width: 700px) {
+@media (max-width: 1279px) and (min-width: 700px) {
   .navItems {
     display: none;
   }
